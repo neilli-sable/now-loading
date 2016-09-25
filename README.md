@@ -14,7 +14,7 @@ To loading start, call load() with section id and icon path.
 nowLoading.load('displayId', './loading.gif');
 </pre>
 
-### end loading, then diplay content
+### end loading, and display content
 When loading is done, call done() with section id and display content.
 Content is HTMLElement object.
 <pre>
