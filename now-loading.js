@@ -1,6 +1,6 @@
 var nowLoading = (function() {
 
-  var load = function(targetId, icon) {
+  var load = function(targetId, icon, height) {
     if (!targetId) return;
     var target = document.getElementById(targetId);
 
@@ -9,6 +9,7 @@ var nowLoading = (function() {
 
     var wrapper = document.createElement('div');
     wrapper.style.textAlign = 'center';
+    wrapper.style.height = height + 'px';
     wrapper.appendChild(img);
 
     target.appendChild(wrapper);
